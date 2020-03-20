@@ -1,0 +1,611 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200319.205902.16106.0.001.json",
+    "dumpEventTime": "2020-03-19T20:59:02Z",
+    "dumpEventTimeStamp": "1584676742528",
+    "processId": 16106,
+    "cwd": "/Users/seraphim/Development/code/js/js-advanced-functions-introduction-to-map-and-reduce-lab-seattle-web-012720",
+    "commandLine": [
+      "/Users/seraphim/.nvm/versions/node/v13.7.0/bin/node",
+      "/Users/seraphim/Development/code/js/js-advanced-functions-introduction-to-map-and-reduce-lab-seattle-web-012720/node_modules/mocha/bin/_mocha",
+      "-R",
+      "mocha-multi",
+      "--reporter-options",
+      "spec=-,json=.results.json"
+    ],
+    "nodejsVersion": "v13.7.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "darwin",
+    "componentVersions": {
+      "node": "13.7.0",
+      "v8": "7.9.317.25-node.28",
+      "uv": "1.34.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.1",
+      "openssl": "1.1.1d",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.7.0/node-v13.7.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.7.0/node-v13.7.0.tar.gz"
+    },
+    "osName": "Darwin",
+    "osRelease": "19.2.0",
+    "osVersion": "Darwin Kernel Version 19.2.0: Sat Nov  9 03:47:04 PST 2019; root:xnu-6153.61.1~20/RELEASE_X86_64",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-5350U CPU @ 1.80GHz",
+        "speed": 1800,
+        "user": 9381890,
+        "nice": 0,
+        "sys": 5020690,
+        "idle": 35551700,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-5350U CPU @ 1.80GHz",
+        "speed": 1800,
+        "user": 3086540,
+        "nice": 0,
+        "sys": 1760140,
+        "idle": 45105490,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-5350U CPU @ 1.80GHz",
+        "speed": 1800,
+        "user": 9282680,
+        "nice": 0,
+        "sys": 4203620,
+        "idle": 36465890,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-5350U CPU @ 1.80GHz",
+        "speed": 1800,
+        "user": 2697580,
+        "nice": 0,
+        "sys": 1507680,
+        "idle": 45746920,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 1
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "50:de:06:b8:cd:52",
+        "address": "fe80::802:e25b:feb5:ce1e",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 4
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "50:de:06:b8:cd:52",
+        "address": "192.168.0.101",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "awdl0",
+        "internal": false,
+        "mac": "82:4e:cb:90:3c:d5",
+        "address": "fe80::804e:cbff:fe90:3cd5",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 8
+      },
+      {
+        "name": "llw0",
+        "internal": false,
+        "mac": "82:4e:cb:90:3c:d5",
+        "address": "fe80::804e:cbff:fe90:3cd5",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 9
+      },
+      {
+        "name": "utun0",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::f8e9:b2b4:e4e5:6d96",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 10
+      },
+      {
+        "name": "utun1",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::4429:b37b:830a:a598",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 11
+      }
+    ],
+    "host": "Zebadiahs-MacBook-Air.local"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x000000010015a0d6",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, v8::Local<v8::String>) [/Users/seraphim/.nvm/versions/node/v13.7.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100082550",
+      "symbol": "node::OnFatalError(char const*, char const*) [/Users/seraphim/.nvm/versions/node/v13.7.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100182b97",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/Users/seraphim/.nvm/versions/node/v13.7.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100182b33",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/Users/seraphim/.nvm/versions/node/v13.7.0/bin/node]"
+    },
+    {
+      "pc": "0x000000010030afb5",
+      "symbol": "v8::internal::Heap::FatalProcessOutOfMemory(char const*) [/Users/seraphim/.nvm/versions/node/v13.7.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001002de839",
+      "symbol": "v8::internal::Factory::NewFixedArrayWithFiller(v8::internal::RootIndex, int, v8::internal::Object, v8::internal::AllocationType) [/Users/seraphim/.nvm/versions/node/v13.7.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100446198",
+      "symbol": "v8::internal::(anonymous namespace)::ElementsAccessorBase<v8::internal::(anonymous namespace)::FastPackedSmiElementsAccessor, v8::internal::(anonymous namespace)::ElementsKindTraits<(v8::internal::ElementsKind)0> >::GrowCapacity(v8::internal::Handle<v8::internal::JSObject>, unsigned int) [/Users/seraphim/.nvm/versions/node/v13.7.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001005fb684",
+      "symbol": "v8::internal::Runtime_GrowArrayElements(int, unsigned long*, v8::internal::Isolate*) [/Users/seraphim/.nvm/versions/node/v13.7.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100954639",
+      "symbol": "Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit [/Users/seraphim/.nvm/versions/node/v13.7.0/bin/node]"
+    },
+    {
+      "pc": "0x00003732af037c69",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2744819712,
+    "totalCommittedMemory": 2744214440,
+    "usedMemory": 2706014648,
+    "availableMemory": 16820680,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33328,
+        "capacity": 33040,
+        "used": 33040,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 33446144,
+        "capacity": 16758784,
+        "used": 0,
+        "available": 16758784
+      },
+      "old_space": {
+        "memorySize": 30810112,
+        "committedMemory": 30600280,
+        "capacity": 26361288,
+        "used": 26299392,
+        "available": 61896
+      },
+      "code_space": {
+        "memorySize": 430080,
+        "committedMemory": 389312,
+        "capacity": 340544,
+        "used": 340544,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1314816,
+        "committedMemory": 1297248,
+        "capacity": 975840,
+        "used": 975840,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 1775886336,
+        "committedMemory": 1775886336,
+        "capacity": 1775852168,
+        "used": 1775852168,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 902512640,
+        "committedMemory": 902512640,
+        "capacity": 902510880,
+        "used": 902510880,
+        "available": 0
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 3.44423,
+    "kernelCpuSeconds": 1.13261,
+    "cpuConsumptionPercent": 114.421,
+    "maxRss": 2404347019264,
+    "pageFaults": {
+      "IORequired": 38,
+      "IONotRequired": 706584
+    },
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "npm_config_save_dev": "",
+    "npm_config_legacy_bundling": "",
+    "npm_config_dry_run": "",
+    "BUNDLER_ORIG_PATH": "/Users/seraphim/.nvm/versions/node/v13.7.0/bin:/Users/seraphim/.rvm/gems/ruby-2.6.1/bin:/Users/seraphim/.rvm/gems/ruby-2.6.1@global/bin:/Users/seraphim/.rvm/rubies/ruby-2.6.1/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/seraphim/.rvm/bin:/Users/seraphim/.rvm/bin",
+    "npm_config_viewer": "man",
+    "npm_config_only": "",
+    "npm_config_commit_hooks": "true",
+    "npm_config_browser": "",
+    "npm_package_gitHead": "2050586438e11042f09247997a3f4a0594b9dfce",
+    "npm_config_also": "",
+    "rvm_use_flag": "",
+    "npm_config_sign_git_commit": "",
+    "npm_config_rollback": "true",
+    "rvm_bin_path": "/Users/seraphim/.rvm/bin",
+    "TERM_PROGRAM": "Apple_Terminal",
+    "NODE": "/Users/seraphim/.nvm/versions/node/v13.7.0/bin/node",
+    "npm_config_usage": "",
+    "npm_config_audit": "true",
+    "INIT_CWD": "/Users/seraphim/Development/code/js/js-advanced-functions-introduction-to-map-and-reduce-lab-seattle-web-012720",
+    "rvm_quiet_flag": "",
+    "NVM_CD_FLAGS": "-q",
+    "GEM_HOME": "/Users/seraphim/.rvm/gems/ruby-2.6.1",
+    "npm_config_globalignorefile": "/Users/seraphim/.nvm/versions/node/v13.7.0/etc/npmignore",
+    "npm_package_devDependencies_mocha": "5.2.0",
+    "BUNDLER_ORIG_MANPATH": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "rvm_gemstone_url": "",
+    "SHELL": "/bin/zsh",
+    "TERM": "xterm-256color",
+    "npm_config_shell": "/bin/zsh",
+    "npm_config_maxsockets": "50",
+    "npm_config_init_author_url": "",
+    "npm_config_shrinkwrap": "true",
+    "npm_config_parseable": "",
+    "npm_config_metrics_registry": "https://registry.npmjs.org/",
+    "BUNDLER_ORIG_GEM_HOME": "/Users/seraphim/.rvm/gems/ruby-2.6.1",
+    "rvm_docs_type": "",
+    "IRBRC": "/Users/seraphim/.rvm/rubies/ruby-2.6.1/.irbrc",
+    "TMPDIR": "/var/folders/mg/t8y2y2h96qsdqdzx6x0d_tzc0000gn/T/",
+    "npm_config_timing": "",
+    "npm_config_init_license": "ISC",
+    "npm_config_if_present": "",
+    "npm_package_devDependencies_file_system": "2.2.2",
+    "npm_package_devDependencies_babel_core": "6.26.3",
+    "TERM_PROGRAM_VERSION": "433",
+    "npm_config_sign_git_tag": "",
+    "npm_config_init_author_email": "",
+    "npm_config_cache_max": "Infinity",
+    "BUNDLER_ORIG_BUNDLER_VERSION": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "npm_config_preid": "",
+    "npm_config_long": "",
+    "npm_config_local_address": "",
+    "npm_config_git_tag_version": "true",
+    "npm_config_cert": "",
+    "rvm_hook": "",
+    "MY_RUBY_HOME": "/Users/seraphim/.rvm/rubies/ruby-2.6.1",
+    "TERM_SESSION_ID": "79A60BF4-484C-4466-B680-485BB84E6381",
+    "npm_config_registry": "https://registry.npmjs.org/",
+    "npm_config_noproxy": "",
+    "npm_config_fetch_retries": "2",
+    "npm_config_versions": "",
+    "npm_config_message": "%s",
+    "npm_config_key": "",
+    "npm_package_readmeFilename": "README.md",
+    "npm_package_devDependencies_mocha_multi": "1.0.1",
+    "GIT_EDITOR": "atom",
+    "npm_package_description": "A JavaScript lab",
+    "NVM_DIR": "/Users/seraphim/.nvm",
+    "SVN_EDITOR": "atom",
+    "USER": "seraphim",
+    "npm_package_license": "Included in Repo",
+    "rvm_gemstone_package_file": "",
+    "USR_PATHS": "/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin",
+    "npm_config_globalconfig": "/Users/seraphim/.nvm/versions/node/v13.7.0/etc/npmrc",
+    "npm_config_prefer_online": "",
+    "npm_config_logs_max": "10",
+    "npm_config_always_auth": "",
+    "rvm_path": "/Users/seraphim/.rvm",
+    "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.m9fJlI1VSV/Listeners",
+    "__CF_USER_TEXT_ENCODING": "0x1F5:0x0:0x0",
+    "npm_execpath": "/Users/seraphim/.nvm/versions/node/v13.7.0/lib/node_modules/npm/bin/npm-cli.js",
+    "npm_config_global_style": "",
+    "npm_config_cache_lock_retries": "10",
+    "rvm_proxy": "",
+    "npm_config_update_notifier": "true",
+    "npm_config_cafile": "",
+    "rvm_ruby_file": "",
+    "npm_package_author_name": "flatironschool",
+    "BUNDLER_ORIG_RUBYLIB": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "npm_config_heading": "npm",
+    "npm_config_audit_level": "low",
+    "npm_config_searchlimit": "20",
+    "npm_config_read_only": "",
+    "npm_config_offline": "",
+    "npm_config_fetch_retry_mintimeout": "10000",
+    "BUNDLER_ORIG_RUBYOPT": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "rvm_silent_flag": "",
+    "rvm_prefix": "/Users/seraphim",
+    "npm_config_json": "",
+    "npm_config_access": "",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"test\"],\"original\":[\"test\"]}",
+    "rvm_ruby_make": "",
+    "PATH": "/Users/seraphim/.nvm/versions/node/v13.7.0/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/Users/seraphim/Development/code/js/js-advanced-functions-introduction-to-map-and-reduce-lab-seattle-web-012720/node_modules/.bin:/Users/seraphim/.nvm/versions/node/v13.7.0/bin:/Users/seraphim/.rvm/gems/ruby-2.6.1/bin:/Users/seraphim/.rvm/gems/ruby-2.6.1@global/bin:/Users/seraphim/.rvm/rubies/ruby-2.6.1/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/seraphim/.rvm/bin:/Users/seraphim/.rvm/bin",
+    "npm_config_allow_same_version": "",
+    "npm_config_https_proxy": "",
+    "npm_config_engine_strict": "",
+    "npm_config_description": "true",
+    "_": "/Users/seraphim/Development/code/js/js-advanced-functions-introduction-to-map-and-reduce-lab-seattle-web-012720/node_modules/.bin/mocha",
+    "LaunchInstanceID": "659415BE-10D5-449B-BCF8-5B4648BAEEC9",
+    "npm_config_userconfig": "/Users/seraphim/.npmrc",
+    "npm_config_init_module": "/Users/seraphim/.npm-init.js",
+    "npm_config_cidr": "",
+    "PWD": "/Users/seraphim/development/code/js/js-advanced-functions-introduction-to-map-and-reduce-lab-seattle-web-012720",
+    "npm_config_user": "501",
+    "npm_config_node_version": "13.7.0",
+    "npm_lifecycle_event": "test",
+    "npm_package_devDependencies_jsdom": "9.2.1",
+    "npm_package_devDependencies_chai": "4.1.2",
+    "EDITOR": "atom",
+    "npm_config_save": "true",
+    "npm_config_ignore_prepublish": "",
+    "npm_config_editor": "atom",
+    "npm_config_auth_type": "legacy",
+    "npm_package_name": "javascript-lab",
+    "BUNDLER_ORIG_GEM_PATH": "/Users/seraphim/.rvm/gems/ruby-2.6.1:/Users/seraphim/.rvm/gems/ruby-2.6.1@global",
+    "rvm_sdk": "",
+    "LANG": "en_US.UTF-8",
+    "npm_config_tag": "latest",
+    "npm_config_script_shell": "",
+    "npm_config_progress": "true",
+    "npm_config_global": "",
+    "npm_config_before": "",
+    "NODE_PATH": "/usr/local/lib/node_modules:",
+    "npm_config_searchstaleness": "900",
+    "npm_config_optional": "true",
+    "npm_config_ham_it_up": "",
+    "XPC_FLAGS": "0x0",
+    "npm_config_save_prod": "",
+    "npm_config_force": "",
+    "npm_config_bin_links": "true",
+    "npm_package_devDependencies_mocha_jsdom": "~1.1.0",
+    "npm_config_searchopts": "",
+    "GIT_MERGE_AUTOEDIT": "no",
+    "npm_config_node_gyp": "/Users/seraphim/.nvm/versions/node/v13.7.0/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js",
+    "npm_config_depth": "Infinity",
+    "npm_package_main": "index.js",
+    "npm_config_sso_poll_frequency": "500",
+    "npm_config_rebuild_bundle": "true",
+    "npm_package_version": "1.0.0",
+    "XPC_SERVICE_NAME": "0",
+    "npm_config_unicode": "true",
+    "rvm_version": "1.29.9-next (master)",
+    "rvm_script_name": "",
+    "rvm_pretty_print_flag": "",
+    "SHLVL": "2",
+    "HOME": "/Users/seraphim",
+    "npm_config_fetch_retry_maxtimeout": "60000",
+    "npm_package_scripts_test": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json",
+    "rvm_ruby_mode": "",
+    "npm_config_tag_version_prefix": "v",
+    "npm_config_strict_ssl": "true",
+    "npm_config_sso_type": "oauth",
+    "npm_config_scripts_prepend_node_path": "warn-only",
+    "npm_config_save_prefix": "^",
+    "npm_config_loglevel": "notice",
+    "npm_config_ca": "",
+    "npm_config_save_exact": "",
+    "npm_config_group": "20",
+    "npm_config_fetch_retry_factor": "10",
+    "npm_config_dev": "",
+    "npm_config_version": "",
+    "npm_config_prefer_offline": "",
+    "npm_config_cache_lock_stale": "60000",
+    "npm_config_otp": "",
+    "npm_config_cache_min": "10",
+    "npm_package_devDependencies_babel_preset_env": "1.7.0",
+    "npm_config_searchexclude": "",
+    "npm_config_cache": "/Users/seraphim/.npm",
+    "BUNDLER_ORIG_BUNDLE_GEMFILE": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "LOGNAME": "seraphim",
+    "npm_lifecycle_script": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json",
+    "npm_config_color": "true",
+    "rvm_alias_expanded": "",
+    "VISUAL": "atom",
+    "npm_config_proxy": "",
+    "npm_config_package_lock": "true",
+    "GEM_PATH": "/Users/seraphim/.rvm/gems/ruby-2.6.1:/Users/seraphim/.rvm/gems/ruby-2.6.1@global",
+    "npm_config_package_lock_only": "",
+    "npm_config_fund": "true",
+    "npm_config_save_optional": "",
+    "NVM_BIN": "/Users/seraphim/.nvm/versions/node/v13.7.0/bin",
+    "npm_config_ignore_scripts": "",
+    "npm_config_user_agent": "npm/6.13.6 node/v13.7.0 darwin x64",
+    "rvm_nightly_flag": "",
+    "npm_config_cache_lock_wait": "10000",
+    "rvm_ruby_make_install": "",
+    "npm_config_production": "",
+    "rvm_niceness": "",
+    "FLATIRON_VERSION": "1.1.1",
+    "npm_config_send_metrics": "",
+    "npm_config_save_bundle": "",
+    "BUNDLER_ORIG_BUNDLE_BIN_PATH": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "rvm_ruby_bits": "",
+    "npm_config_umask": "0022",
+    "npm_config_node_options": "",
+    "npm_config_init_version": "1.0.0",
+    "rvm_bin_flag": "",
+    "npm_config_init_author_name": "",
+    "npm_config_git": "git",
+    "npm_config_scope": "",
+    "BUNDLER_ORIG_RB_USER_INSTALL": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "rvm_only_path_flag": "",
+    "RUBY_VERSION": "ruby-2.6.1",
+    "SECURITYSESSIONID": "186a6",
+    "npm_config_unsafe_perm": "true",
+    "npm_config_tmp": "/var/folders/mg/t8y2y2h96qsdqdzx6x0d_tzc0000gn/T",
+    "npm_config_onload_script": "",
+    "npm_node_execpath": "/Users/seraphim/.nvm/versions/node/v13.7.0/bin/node",
+    "npm_config_prefix": "/Users/seraphim/.nvm/versions/node/v13.7.0",
+    "npm_config_link": "",
+    "npm_config_format_package_lock": "true",
+    "LOADED_MOCHA_OPTS": "true"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 10240,
+      "hard": "unlimited"
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": 67104768
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 1392,
+      "hard": 2088
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/Users/seraphim/.nvm/versions/node/v13.7.0/bin/node",
+    "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+    "/usr/lib/libSystem.B.dylib",
+    "/usr/lib/libc++.1.dylib",
+    "/usr/lib/libobjc.A.dylib",
+    "/usr/lib/libfakelink.dylib",
+    "/usr/lib/libDiagnosticMessagesClient.dylib",
+    "/usr/lib/libicucore.A.dylib",
+    "/usr/lib/libz.1.dylib",
+    "/usr/lib/libc++abi.dylib",
+    "/usr/lib/system/libcache.dylib",
+    "/usr/lib/system/libcommonCrypto.dylib",
+    "/usr/lib/system/libcompiler_rt.dylib",
+    "/usr/lib/system/libcopyfile.dylib",
+    "/usr/lib/system/libcorecrypto.dylib",
+    "/usr/lib/system/libdispatch.dylib",
+    "/usr/lib/system/libdyld.dylib",
+    "/usr/lib/system/libkeymgr.dylib",
+    "/usr/lib/system/liblaunch.dylib",
+    "/usr/lib/system/libmacho.dylib",
+    "/usr/lib/system/libquarantine.dylib",
+    "/usr/lib/system/libremovefile.dylib",
+    "/usr/lib/system/libsystem_asl.dylib",
+    "/usr/lib/system/libsystem_blocks.dylib",
+    "/usr/lib/system/libsystem_c.dylib",
+    "/usr/lib/system/libsystem_configuration.dylib",
+    "/usr/lib/system/libsystem_coreservices.dylib",
+    "/usr/lib/system/libsystem_darwin.dylib",
+    "/usr/lib/system/libsystem_dnssd.dylib",
+    "/usr/lib/system/libsystem_featureflags.dylib",
+    "/usr/lib/system/libsystem_info.dylib",
+    "/usr/lib/system/libsystem_m.dylib",
+    "/usr/lib/system/libsystem_malloc.dylib",
+    "/usr/lib/system/libsystem_networkextension.dylib",
+    "/usr/lib/system/libsystem_notify.dylib",
+    "/usr/lib/system/libsystem_sandbox.dylib",
+    "/usr/lib/system/libsystem_secinit.dylib",
+    "/usr/lib/system/libsystem_kernel.dylib",
+    "/usr/lib/system/libsystem_platform.dylib",
+    "/usr/lib/system/libsystem_pthread.dylib",
+    "/usr/lib/system/libsystem_symptoms.dylib",
+    "/usr/lib/system/libsystem_trace.dylib",
+    "/usr/lib/system/libunwind.dylib",
+    "/usr/lib/system/libxpc.dylib"
+  ]
+}
